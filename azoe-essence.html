@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Azoe Essence · Caso de estudio · Jeickel Oropeza</title>
+<meta name="description" content="Caso de estudio: plataforma SaaS multitenant de inventario, ventas offline y cobranza para una perfumería, construida con React, NestJS y PostgreSQL.">
+<meta name="theme-color" content="#21262B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Azoe Essence · Caso de estudio · Jeickel Oropeza">
+<meta property="og:description" content="Caso de estudio: plataforma SaaS multitenant de inventario, ventas offline y cobranza para una perfumería, construida con React, NestJS y PostgreSQL.">
+<meta property="og:image" content="assets/img/retrato.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2321262B'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='800' font-size='26' fill='%23F1F1F1' text-anchor='middle'%3EJO%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="mono" href="index.html" aria-label="Inicio">JO</a>
+    <ul>
+      <li><a href="index.html#proyectos">Proyectos</a></li>
+      <li><a href="azoe-essence.html" aria-current="page">Caso Azoe</a></li>
+      <li><a href="index.html#experiencia">Experiencia</a></li>
+      <li><a href="index.html#habilidades">Habilidades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="btn" href="#contacto"><svg class="ico" data-i="mail"></svg>Contactar</a>
+  </div>
+</nav>
+
+<header class="case-hero" id="inicio">
+  <div class="wrap">
+    <a class="back" href="index.html#proyectos"><svg class="ico" data-i="back"></svg>Volver a proyectos</a>
+    <div><span class="status"><i></i>Caso de estudio · 2026 – actualidad</span></div>
+    <h1 class="case-title">Azoe <span>Essence</span></h1>
+    <p class="role"><svg class="ico" data-i="box"></svg>Plataforma de inventario, ventas y cobranza</p>
+    <p class="lede">Plataforma SaaS de inventario, ventas y cobranza para una perfumería. La diseñé y construí completa, desde el modelo de datos hasta el despliegue.</p>
+    <ul class="tags"><li>React</li><li>TypeScript</li><li>NestJS</li><li>PostgreSQL</li><li>PWA</li></ul>
+    <nav class="toc" aria-label="Secciones del caso">
+      <a class="chip" href="#resumen">Resumen</a>
+      <a class="chip" href="#funcionalidades">Funcionalidades</a>
+      <a class="chip" href="#arquitectura">Arquitectura</a>
+      <a class="chip" href="#decisiones">Decisiones técnicas</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case">
+  <section class="block" id="resumen" aria-labelledby="t-resumen">
+    <div class="wrap">
+      <div class="head"><h2 id="t-resumen" class="typewriter code-title" data-code="Resumen" aria-label="Resumen">Resumen</h2><p>El problema, la solución y mi rol en el proyecto.</p></div>
+      <div class="lead">
+        <div>
+          <p>Azoe Essence vende perfumes árabes y de diseñador en <b>botella completa y en decants por mililitro</b>, cobra en <b>dólares y bolívares</b> y vende a cuotas o en apartado. Las hojas de cálculo ya no alcanzaban para llevar el stock fraccionado, las cuotas vencidas ni el registro de ventas cuando falla el internet.</p>
+          <p>Construí una plataforma <b>multitenant y multi-tienda</b> con un panel administrativo instalable como <b>PWA que sigue vendiendo sin conexión</b>, un módulo de <b>crédito con cronograma de cuotas y mora</b>, reportes de rentabilidad por modalidad de venta y un <b>catálogo público por tienda</b> que recibe pedidos por WhatsApp.</p>
+          <p>Mi rol: arquitectura, backend, frontend, base de datos, pruebas y despliegue.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>80+</b><small>endpoints REST documentados con Swagger</small></div>
+          <div class="stat"><b>22</b><small>modelos de datos en PostgreSQL con Prisma</small></div>
+          <div class="stat"><b>160+</b><small>pruebas automatizadas (Jest, Vitest y MSW)</small></div>
+          <div class="stat"><b>3</b><small>roles con permisos y acceso por tienda</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="funcionalidades" aria-labelledby="t-funcionalidades">
+    <div class="wrap">
+      <div class="head"><h2 id="t-funcionalidades" class="typewriter code-title" data-code="Funcionalidades" aria-label="Funcionalidades">Funcionalidades</h2><p>Capturas reales de la aplicación. Haz clic en una para ampliarla.</p></div>
+        <div class="filters" role="group" aria-label="Filtrar capturas" id="shotFilters"></div>
+        <div class="shots" id="shots"></div>
+    </div>
+  </section>
+
+  <section class="block" id="arquitectura" aria-labelledby="t-arquitectura">
+    <div class="wrap">
+      <div class="head"><h2 id="t-arquitectura" class="typewriter code-title" data-code="Arquitectura" aria-label="Arquitectura">Arquitectura</h2><p>De la PWA a PostgreSQL, capa por capa.</p></div>
+        <div class="arch">
+          <div class="layers">
+            <div class="layer">
+              <h4>Clientes<small>Navegador y móvil</small></h4>
+              <div class="nodes">
+                <span class="node"><svg class="ico" data-i="dash"></svg>Panel administrativo (PWA)</span>
+                <span class="node"><svg class="ico" data-i="store"></svg>Catálogo público por tienda</span>
+                <span class="node"><svg class="ico" data-i="chat"></svg>Pedido por WhatsApp</span>
+              </div>
+            </div>
+            <div class="wire">Service Worker (Workbox) · caché offline · instalable</div>
+            <div class="layer hl">
+              <h4>Frontend<small>SPA con React 19 y Vite</small></h4>
+              <div class="nodes">
+                <span class="node key">TanStack Router</span>
+                <span class="node key">TanStack Query</span>
+                <span class="node">Caché persistida en IndexedDB</span>
+                <span class="node">Cola de ventas offline</span>
+                <span class="node">Zustand</span>
+                <span class="node">React Hook Form + Zod</span>
+                <span class="node">Tailwind 4 + shadcn/Radix</span>
+                <span class="node">Recharts</span>
+                <span class="node">jsPDF y SheetJS</span>
+              </div>
+            </div>
+            <div class="wire">HTTPS · REST <code>/api</code> · JWT de acceso + refresh token rotativo</div>
+            <div class="layer hl">
+              <h4>Backend<small>NestJS 11 en TypeScript</small></h4>
+              <div>
+                <div class="pipe" aria-label="Ciclo de cada petición">
+                  <span class="node">Helmet y CORS</span><i>→</i><span class="node">Rate limit</span><i>→</i><span class="node">JWT</span><i>→</i><span class="node">Roles</span><i>→</i><span class="node">Acceso a tienda</span><i>→</i><span class="node">Validación DTO</span>
+                </div>
+                <div class="nodes">
+                  <span class="node key">auth</span><span class="node key">products</span><span class="node key">inventory</span><span class="node key">sales</span><span class="node key">receivables</span><span class="node key">customers</span><span class="node key">reports</span><span class="node key">expenses</span><span class="node key">catalog</span><span class="node key">stores</span><span class="node key">users</span>
+                  <span class="node"><svg class="ico" data-i="clock"></svg>Cron diario de mora</span>
+                  <span class="node">Filtros de error unificados</span>
+                </div>
+              </div>
+            </div>
+            <div class="wire">Prisma ORM 7 · transacciones atómicas · migraciones versionadas</div>
+            <div class="layer">
+              <h4>Datos<small>Persistencia y archivos</small></h4>
+              <div class="nodes">
+                <span class="node key"><svg class="ico" data-i="db"></svg>PostgreSQL 16</span>
+                <span class="node"><svg class="ico" data-i="image"></svg>Cloudinary (imágenes)</span>
+              </div>
+            </div>
+          </div>
+          <aside class="infra" aria-label="Infraestructura">
+            <h4>Infraestructura</h4>
+            <span class="node"><svg class="ico" data-i="box"></svg>Docker multi-stage</span>
+            <p>Imágenes separadas para API y SPA. Compose para desarrollo local con PostgreSQL.</p>
+            <span class="node"><svg class="ico" data-i="server"></svg>nginx</span>
+            <p>Sirve la SPA estática y hace de proxy a <code>/api</code>, en el mismo origen.</p>
+            <span class="node"><svg class="ico" data-i="cloud"></svg>Railway</span>
+            <p>Despliegue desde Dockerfile con reinicio ante fallos.</p>
+            <span class="node"><svg class="ico" data-i="code"></svg>Swagger / OpenAPI</span>
+            <p>Contrato de la API en <code>/api/docs</code>.</p>
+          </aside>
+        </div>
+    </div>
+  </section>
+
+  <section class="block" id="decisiones" aria-labelledby="t-decisiones">
+    <div class="wrap">
+      <div class="head"><h2 id="t-decisiones" class="typewriter code-title" data-code="Decisiones" aria-label="Decisiones técnicas">Decisiones técnicas</h2><p>Los problemas difíciles y cómo los resolví.</p></div>
+        <div class="decisions">
+          <div class="dec"><svg class="ico" data-i="tenant"></svg><h4>Multitenancy por diseño</h4><p>El <code>tenantId</code> viaja en el JWT y todas las consultas se filtran por él. SKU, correo y categoría son únicos por tenant, y un guard limita a cada vendedor a sus tiendas asignadas.</p></div>
+          <div class="dec"><svg class="ico" data-i="offline"></svg><h4>Ventas sin conexión</h4><p>Las ventas se encolan en IndexedDB con un <code>clientRequestId</code> (UUID) que hace los reintentos idempotentes. Al sincronizar, si el stock o el precio ya no cuadran, la venta se acepta y queda marcada para revisión.</p></div>
+          <div class="dec"><svg class="ico" data-i="drop"></svg><h4>Inventario fraccionable</h4><p>Cada perfume lleva botellas cerradas y mililitros abiertos. Ventas, entradas, ajustes y apartados generan movimientos dentro de transacciones atómicas, así el stock no queda nunca a medias.</p></div>
+          <div class="dec"><svg class="ico" data-i="card"></svg><h4>Crédito y cobranza</h4><p>Cuotas semanales, quincenales o mensuales, inicial mínima, límite por cliente con aprobación, mora fija o porcentual con días de gracia y un cron diario que marca cuotas vencidas. Los abonos se reciben en USD o en Bs a la tasa BCV del día.</p></div>
+          <div class="dec"><svg class="ico" data-i="shield"></svg><h4>Seguridad</h4><p>Access token corto y refresh token rotativo guardado como hash, que detecta reutilización por familia y revoca la sesión. Además: Helmet, CORS estricto, rate limiting, roles OWNER/ADMIN/STAFF y trazabilidad con <code>X-Request-Id</code>.</p></div>
+          <div class="dec"><svg class="ico" data-i="store"></svg><h4>Catálogo y documentos</h4><p>Cada tienda tiene un catálogo público con su logo, imagen y textos, y recibe pedidos por WhatsApp. Catálogo y estados de cuenta en PDF; importación y exportación de productos en Excel.</p></div>
+        </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="case-next">
+        <div><h2>¿Quieres ver más?</h2><p>Revisa el resto de mis proyectos y mi experiencia en equipos de Perú, España y Bélgica.</p></div>
+        <a class="btn solid" href="index.html#proyectos"><svg class="ico" data-i="grid"></svg>Ver todos los proyectos</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="contact" id="contacto" aria-labelledby="t-con">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <div class="hola-row"><span class="hola-av" aria-hidden="true">JO</span><div class="hola" id="hola"><span class="hola-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="hola-msg">¡Hola!</span><span class="hola-meta" aria-hidden="true"><span class="hola-time">Ahora</span><svg class="ico" data-i="ticks"></svg></span></div></div>
+        <h2 id="t-con" class="typewriter" aria-label="Hablemos de tu próximo proyecto"><span class="tw-ghost" aria-hidden="true">Hablemos de tu próximo proyecto</span><span class="tw-text" aria-hidden="true" id="twText"></span></h2>
+        <p class="sub">Lidero proyectos desde el concepto hasta producción, con autonomía y entregas continuas.</p>
+        <div class="hola-row hola-row-2"><span class="hola-av" aria-hidden="true">JO</span><div class="hola hola-2" id="hola2"><span class="hola-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="hola-msg">Escríbeme y conversemos</span><span class="hola-meta" aria-hidden="true"><span class="hola-time">Ahora</span><svg class="ico" data-i="ticks"></svg></span></div></div>
+      </div>
+      <div class="contact-card glow">
+        <span class="label">Correo</span>
+        <div class="mail-row">
+          <svg class="ico" data-i="mail"></svg>
+          <span class="addr" id="addr">jeickel0206@gmail.com</span>
+        </div>
+        <button class="btn solid" id="copy" type="button"><svg class="ico" data-i="copy"></svg>Copiar correo</button>
+        <ul class="contact-list">
+          <li><a href="https://www.linkedin.com/in/jeickel-oropeza/" target="_blank" rel="noopener"><svg class="ico" data-i="linkedin"></svg>linkedin.com/in/jeickel-oropeza</a></li>
+          <li><svg class="ico" data-i="phone"></svg>+58 412 903 7769</li>
+          <li><svg class="ico" data-i="pin"></svg>Miranda, Venezuela</li>
+        </ul>
+      </div>
+    </div>
+    <footer><span>Jeickel Oropeza, Desarrollador Full Stack</span><span>© <span data-year>2026</span></span></footer>
+  </div>
+</section>
+
+<div class="lightbox" id="lb" hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <img id="lbImg" alt="">
+  <button type="button" id="lbClose" aria-label="Cerrar"><svg class="ico" data-i="x"></svg></button>
+</div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script src="assets/js/common.js"></script>
+<script src="assets/js/azoe.js"></script>
+</body>
+</html>

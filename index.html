@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jeickel Oropeza · Desarrollador Full Stack</title>
+<meta name="description" content="Portafolio de Jeickel Oropeza, desarrollador Full Stack con React, Node.js, Vue.js y TypeScript.">
+<meta name="theme-color" content="#21262B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jeickel Oropeza · Desarrollador Full Stack">
+<meta property="og:description" content="Portafolio de Jeickel Oropeza, desarrollador Full Stack con React, Node.js, Vue.js y TypeScript.">
+<meta property="og:image" content="assets/img/retrato.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2321262B'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='800' font-size='26' fill='%23F1F1F1' text-anchor='middle'%3EJO%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="mono" href="#inicio" aria-label="Inicio">JO</a>
+    <ul>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="azoe-essence.html">Caso Azoe</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="btn" href="#contacto"><svg class="ico" data-i="mail"></svg>Contactar</a>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="status"><i></i>Del concepto a producción</span>
+        <h1 class="name" aria-label="Jeickel Oropeza"><span>Jeickel</span><span>Oropeza</span></h1>
+        <p class="role"><svg class="ico" data-i="code"></svg>Desarrollador Full Stack e Ingeniero en Informática</p>
+        <p class="lede">Diseño y escalo aplicaciones web de alto rendimiento con React, Node.js, Vue.js y TypeScript. Me especializo en soluciones SaaS en tiempo real con WebSockets, visualización de métricas y automatización de procesos para los sectores tecnológico, educativo y biológico.</p>
+        <div class="cta">
+          <a class="btn solid" href="#proyectos"><svg class="ico" data-i="grid"></svg>Ver proyectos</a>
+          <a class="btn" href="https://www.linkedin.com/in/jeickel-oropeza/" target="_blank" rel="noopener"><svg class="ico" data-i="linkedin"></svg>LinkedIn</a>
+        </div>
+      </div>
+      <figure class="portrait" style="margin:0">
+        <img fetchpriority="high" src="assets/img/retrato.jpg" alt="Retrato de Jeickel Oropeza en blanco y negro, camiseta negra">
+      </figure>
+    </div>
+    <div class="facts">
+      <div class="fact"><svg class="ico" data-i="clock"></svg><div><b>6+ años de experiencia</b><small>Aplicaciones web desde 2018</small></div></div>
+      <div class="fact"><svg class="ico" data-i="globe"></svg><div><b>Perú, España y Bélgica</b><small>Equipos multiculturales y remotos</small></div></div>
+      <div class="fact"><svg class="ico" data-i="loop"></svg><div><b>Scrum, Kanban y EOS</b><small>Entrega continua con metodologías ágiles</small></div></div>
+    </div>
+    <div class="ribbons" role="region" aria-label="Tecnologías que maneja">
+      <div class="ribbon r1"><ul class="track" id="track"></ul></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="block" id="proyectos" aria-labelledby="t-proy">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="t-proy" class="typewriter code-title" data-code="Proyectos" aria-label="Proyectos">Proyectos</h2>
+        <p>Productos y plataformas que he construido para equipos en Venezuela, Perú, España y Bélgica.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar por tecnología" id="filters"></div>
+      <div class="projects" id="projects"></div>
+    </div>
+  </section>
+
+  <section class="block" id="experiencia" aria-labelledby="t-exp">
+    <div class="wrap">
+      <div class="head"><h2 id="t-exp" class="typewriter code-title" data-code="Experiencia" aria-label="Experiencia">Experiencia</h2><p>Del desarrollo de sitios para agencia a liderar un LMS de punta a punta.</p></div>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <section class="block" id="habilidades" aria-labelledby="t-hab">
+    <div class="wrap">
+      <div class="head"><h2 id="t-hab" class="typewriter code-title" data-code="Habilidades" aria-label="Habilidades">Habilidades</h2><p>Del front-end a la infraestructura, con foco en tiempo real y APIs.</p></div>
+      <div class="skills" id="skills"></div>
+      <div class="extra">
+        <div class="tier"><h3><svg class="ico" data-i="lang"></svg>Idiomas</h3>
+          <p><b>Español:</b> nativo.<br><b>Inglés:</b> intermedio. Lectura y redacción técnica fluidas; conversación en desarrollo.</p></div>
+        <div class="tier"><h3><svg class="ico" data-i="cap"></svg>Educación</h3>
+          <p><b>Ingeniería en Informática</b><br>Universidad Politécnica Territorial de los Altos Mirandinos Cecilio Acosta</p>
+          <p><b>Bachiller en Procesamiento de Datos</b><br>Colegio San José, Los Teques, Miranda</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="contact" id="contacto" aria-labelledby="t-con">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <div class="hola-row"><span class="hola-av" aria-hidden="true">JO</span><div class="hola" id="hola"><span class="hola-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="hola-msg">¡Hola!</span><span class="hola-meta" aria-hidden="true"><span class="hola-time">Ahora</span><svg class="ico" data-i="ticks"></svg></span></div></div>
+        <h2 id="t-con" class="typewriter" aria-label="Hablemos de tu próximo proyecto"><span class="tw-ghost" aria-hidden="true">Hablemos de tu próximo proyecto</span><span class="tw-text" aria-hidden="true" id="twText"></span></h2>
+        <p class="sub">Lidero proyectos desde el concepto hasta producción, con autonomía y entregas continuas.</p>
+        <div class="hola-row hola-row-2"><span class="hola-av" aria-hidden="true">JO</span><div class="hola hola-2" id="hola2"><span class="hola-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="hola-msg">Escríbeme y conversemos</span><span class="hola-meta" aria-hidden="true"><span class="hola-time">Ahora</span><svg class="ico" data-i="ticks"></svg></span></div></div>
+      </div>
+      <div class="contact-card glow">
+        <span class="label">Correo</span>
+        <div class="mail-row">
+          <svg class="ico" data-i="mail"></svg>
+          <span class="addr" id="addr">jeickel0206@gmail.com</span>
+        </div>
+        <button class="btn solid" id="copy" type="button"><svg class="ico" data-i="copy"></svg>Copiar correo</button>
+        <ul class="contact-list">
+          <li><a href="https://www.linkedin.com/in/jeickel-oropeza/" target="_blank" rel="noopener"><svg class="ico" data-i="linkedin"></svg>linkedin.com/in/jeickel-oropeza</a></li>
+          <li><svg class="ico" data-i="phone"></svg>+58 412 903 7769</li>
+          <li><svg class="ico" data-i="pin"></svg>Miranda, Venezuela</li>
+        </ul>
+      </div>
+    </div>
+    <footer><span>Jeickel Oropeza, Desarrollador Full Stack</span><span>© <span data-year>2026</span></span></footer>
+  </div>
+</section>
+
+<div class="lightbox" id="lb" hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <img id="lbImg" alt="">
+  <button type="button" id="lbClose" aria-label="Cerrar"><svg class="ico" data-i="x"></svg></button>
+</div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script src="assets/js/common.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
